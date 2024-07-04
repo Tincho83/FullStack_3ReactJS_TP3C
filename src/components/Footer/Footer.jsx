@@ -115,7 +115,7 @@ const Footer = () => {
         </ChakraLink>
 
         <ChakraLink href="pages/terminoscond.html" className='cabecera_divEnlacesHorizontales_ul_li_a' >
-          <Image className='piepagina_divSuscripcion_img-AyudaTermCondicion' boxSize='32px' objectFit='cover' src='.https://iocomm.000webhostapp.com/imgs/ayuda.png' alt='Terminos y Condiciones' />
+          <Image className='piepagina_divSuscripcion_img-AyudaTermCondicion' boxSize='32px' objectFit='cover' src='https://iocomm.000webhostapp.com/imgs/ayuda.png' alt='Terminos y Condiciones' />
           <Text className='piepagina_divSuscripcion_img-AyudaTermCondicion_p'>Terminos y Condiciones</Text>
         </ChakraLink>
 
