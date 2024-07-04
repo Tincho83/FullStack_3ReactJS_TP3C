@@ -3,6 +3,21 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './CustomMap.css'
 import { Box, Flex } from '@chakra-ui/react'
+import L from 'leaflet'; // Importa Leaflet
+import 'leaflet/dist/leaflet.css'; // Importa el CSS de Leaflet
+
+// Sobrescribe las opciones del icono predeterminado de Leaflet
+delete L.Icon.Default.prototype._getIconUrl;
+
+const urlIcono = "https://iocomm.000webhostapp.com/marker-icon.png";
+const urlIconob = "https://iocomm.000webhostapp.com/marker-shadow.png";
+
+L.Icon.Default.mergeOptions({
+  //iconRetinaUrl: markerIcon,
+  iconRetinaUrl: urlIcono,
+  iconUrl: urlIcono,
+  shadowUrl: urlIconob,
+});
 
 const CustomMap = () => {
   return (
