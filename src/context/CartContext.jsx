@@ -1,11 +1,17 @@
-import { setIndexConfiguration } from 'firebase/firestore'
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 
 const Contexto = createContext()
 
 export const CartContextProvider = ({ children }) => {
 
-    const [carrito, establecerCarrito] = useState([])
+    //Cargar carrito desde localStorage
+    const iniciarCarrito = JSON.parse(localStorage.getItem('carrito')) || []; 
+    
+    //const [carrito, establecerCarrito] = useState([])
+    const [carrito, establecerCarrito] = useState(iniciarCarrito)
+
+    //Guardar carrito en localStorage cada vez que cambie
+    useEffect(() => { localStorage.setItem('carrito', JSON.stringify(carrito)); }, [carrito]);
 
     const agregarItem = (productoParaAgregar, cantidad) => {
         const nuevoItem = { ...productoParaAgregar, cantidad }

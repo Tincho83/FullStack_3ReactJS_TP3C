@@ -89,7 +89,10 @@ const CheckOut = () => {
 
                 const actualStock = productoDocumento.data().stock
 
-                if (actualStock > item.cantidad) {
+                console.log("actualstock:", actualStock)
+                console.log("item_cantidad:", item.cantidad)
+
+                if (actualStock >= item.cantidad) {
                     await updateDoc(documentoReferencia, { stock: actualStock - item.cantidad })
 
                 } else {
@@ -103,10 +106,6 @@ const CheckOut = () => {
                     });
                 }
             }
-
-
-
-
 
 
             const pedido = {
@@ -126,11 +125,18 @@ const CheckOut = () => {
             }).then(() => {
                 vaciarCarrito();
                 navegador('/')
-
             });
         }
         catch (error) {
-            console.log('error: ', error)
+            Swal.fire({
+                title: "Ha ocurrido un error.",
+                text: `error: ${error}`,
+                icon: "error",
+                confirmButtonText: "Ir a Catalogo de Productos",
+            }).then(() => {
+                vaciarCarrito();
+                navegador('/')
+            });
         }
     }
 
