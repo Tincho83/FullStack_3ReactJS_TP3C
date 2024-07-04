@@ -5,6 +5,7 @@
 ### Vista previa
 
 ### Depliegue
+[Mi Tienda Online] (https://tiendavirtual62310.netlify.app/)
 
 ### Descripcion
 Sitio ecommerce para React
