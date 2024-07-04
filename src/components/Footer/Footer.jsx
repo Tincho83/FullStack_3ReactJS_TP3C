@@ -12,7 +12,7 @@ const Footer = () => {
       {/* Icono Flotante subir */}
       <Box className='piepagina_divflotantesubir'>
         <ChakraLink href='#inicio'>
-          <img src="../../src/assets/imgs/varios/subir.png" alt="ir a inicio superior de la pagina"
+          <img src="https://iocomm.000webhostapp.com/imgs/subir.png" alt="ir a inicio superior de la pagina"
             className='piepagina_divflotante_imgsubir' />
         </ChakraLink>
       </Box>
@@ -20,7 +20,7 @@ const Footer = () => {
       {/* Icono Flotante WhatsApps */}
       <Box className='piepagina_divflotantewts'>
         <ChakraLink href='https://api.whatsapp.com/send?phone=5435156056156&text=%C2%A1Hola%21+Estoy+en+la+tienda+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n.&type=phone_number&app_absent=0' isExternal>
-          <img src="../../src/assets/imgs/varios/whatsapp.png" alt="ir a Contacto Whastapp"
+          <img src="https://iocomm.000webhostapp.com/imgs/whatsapp.png" alt="ir a Contacto Whastapp"
             className='piepagina_divflotante_imgWhatsapps' />
         </ChakraLink>
       </Box>
