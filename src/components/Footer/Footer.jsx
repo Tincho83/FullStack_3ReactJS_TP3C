@@ -36,31 +36,31 @@ const Footer = () => {
             <ul className='piepagina_divcontacto_ulInfoContacto'>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='../../src/assets/imgs/varios/tel.png' alt='Telefono de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='https://iocomm.000webhostapp.com/imgs/tel.png' alt='Telefono de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>Telefono/FAX: +543514350620</Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='../../src/assets/imgs/varios/correo.png' alt='Correo de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='https://iocomm.000webhostapp.com/imgs/correo.png' alt='Correo de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>Correo Electronico: io@io.com</Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='../../src/assets/imgs/varios/whatsapp.png' alt='Contacto Whatsapps' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='https://iocomm.000webhostapp.com/imgs/whatsapp.png' alt='Contacto Whatsapps' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>+543515625625 </Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='../../src/assets/imgs/varios/telegram.png' alt='Contacto Telegram' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='https://iocomm.000webhostapp.com/imgs/telegram.png' alt='Contacto Telegram' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>+543515625625 </Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='../../src/assets/imgs/varios/linkedin.png' alt='Contacto Linkedin' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='https://iocomm.000webhostapp.com/imgs/linkedin.png' alt='Contacto Linkedin' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>io@io.com  </Text>
                 </Flex>
               </li>
@@ -77,13 +77,13 @@ const Footer = () => {
             <ul className='piepagina_divcontacto_ulInfoContacto'>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='../../src/assets/imgs/varios/sucursal.png' alt='Domicilio' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='https://iocomm.000webhostapp.com/imgs/sucursal.png' alt='Domicilio' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'> Domicilio: Calle 96 Nro 3200  </Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='../../src/assets/imgs/varios/horario.png' alt='Horario' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='https://iocomm.000webhostapp.com/imgs/horario.png' alt='Horario' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'> Lunes a Viernes de 09:00hs a 19:00hs </Text>
                 </Flex>
               </li>
