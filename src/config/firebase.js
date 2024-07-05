@@ -27,13 +27,11 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 
 /*
-
-Solo descomentar para insertar los productos del archivo .js en firebase
+Solo descomentar para insertar los productos del archivo .js en firebase de manera automatica
+Reemplazar xxonsol.reg por c  o  n  s  o  l  e . l  o  g (sin espacios)
 listaProductos.forEach((prod) => {
     addDoc(collection(db, "listaProductos"), prod)
-    .then((elem) => console.log(`se agrego el producto id ${elem.id}`))
-    .catch((error) => console.log(error));
+    .then((elem) => xxonsol.reg(`se agrego el producto id ${elem.id}`))
+    .catch((error) => xxonsol.reg(error));
 });
-
-
 */

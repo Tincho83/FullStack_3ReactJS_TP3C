@@ -63,11 +63,3 @@ const ItemListContainer = ({ title }) => {
 }
 
 export default ItemListContainer
-
-/*    const datosProductos = categoriaId ? obtenerProductosporCategoria(categoriaId) : obtenerProductos()
-
-    datosProductos
-      .then((response) => setProductos(response))
-      .catch((error) => console.log(error))
-      .finally(() => establecerCargando(false))
-*/

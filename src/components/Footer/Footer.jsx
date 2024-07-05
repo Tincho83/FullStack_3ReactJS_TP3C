@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Image, useBreakpointValue, Link as ChakraLink } from '@chakra-ui/react'
+import { Box, Flex, Text, Image, useColorMode, useBreakpointValue, Link as ChakraLink } from '@chakra-ui/react'
 import React from 'react'
 import CustomMap from '../CustomMap/CustomMap'
 import './Footer.css'
@@ -6,8 +6,10 @@ import './Footer.css'
 const Footer = () => {
   const direccion = useBreakpointValue({ base: "column", md: "row" });
 
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
-    <Box className="piepagina">
+    <Box className="piepagina" backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'}>
 
       {/* Icono Flotante subir */}
       <Box className='piepagina_divflotantesubir'>
@@ -143,9 +145,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-/*
-
-
-
-*/

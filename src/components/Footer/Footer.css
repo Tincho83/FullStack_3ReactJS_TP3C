@@ -3,7 +3,7 @@
     .piepagina {
         border-top: 1px solid rgba(0, 0, 0, 0.96);
         padding-top: 20px;
-        background-image: linear-gradient(to top, rgba(111, 138, 183, 0.96), rgba(202, 229, 255, 0.96));
+        /* background-image: linear-gradient(to top, rgba(111, 138, 183, 0.96), rgba(202, 229, 255, 0.96)); */
     }
 
     .piepagina_divflotante_imgsubir {

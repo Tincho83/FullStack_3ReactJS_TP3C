@@ -23,12 +23,11 @@ import { GiPlanetConquest } from "react-icons/gi";
 
 const Header = () => {
 
-
     const { colorMode, toggleColorMode } = useColorMode();
 
     return (
         <Box id='inicio'>
-            <Flex h={'14hv'} w={'100%'} align={'center'} className='flexboxNavBar' id='flexboxNavBarC'>
+            <Flex h={'14hv'} w={'100%'} align={'center'} className='flexboxNavBar' id='flexboxNavBarC' backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'}>
                 <ChakraLink href='https://www.correoargentino.com.ar/' isExternal marginLeft={'25px'} marginRight={'5px'}><Flex align="center"> <TbTruckDelivery />Segui tu compra</Flex></ChakraLink>
                 <ChakraLink href='#' isExternal marginLeft={'25px'} marginRight={'5px'}><Flex align="center"> <MdAccountBox />Contacto</Flex></ChakraLink>
                 <ChakraLink href='#' isExternal marginLeft={'25px'} marginRight={'5px'}><Flex align="center"> <FaMapMarkedAlt />Sucursales</Flex></ChakraLink>
@@ -37,7 +36,7 @@ const Header = () => {
                 <ChakraLink href='https://www.nationalgeographicla.com/medio-ambiente/2023/04/dia-de-la-tierra-10-acciones-sustentables-que-puedes-realizar-para-cuidar-el-planeta' isExternal marginLeft={'25px'} marginRight={'5px'}><Flex align="center"> <GiPlanetConquest />Cuidemos el Planeta</Flex></ChakraLink>
             </Flex>
 
-            <Flex h={'14hv'} w={'100%'} justify={'space-between'} align={'center'} backgroundColor={'#CAE5FF'} className='flexboxNavBar' id='flexboxNavBarD'>
+            <Flex h={'14hv'} w={'100%'} justify={'space-between'} align={'center'} backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'} className='flexboxNavBar' id='flexboxNavBarD'>
                 <Menu className='menuHeader'>
                     <MenuButton
                         as={IconButton}

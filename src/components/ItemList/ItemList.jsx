@@ -15,6 +15,3 @@ const ItemList = ({ productoss }) => {
 }
 
 export default ItemList
-/*
-
-*/

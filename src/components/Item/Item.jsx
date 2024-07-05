@@ -16,20 +16,23 @@ const Item = ({ id, nombre, categoria, marca, precio, envdisponible, stock, imag
     // Determinar el mensaje de disponibilidad
     let disponibilidadMsg = '';
     let verDetalle = true;
+    let msgColor = 'red.500';
+
     if (stock <= 0) {
         disponibilidadMsg = 'Sin stock';
-        verDetalle = false;
+        msgColor = 'black';
+        verDetalle = false;        
     } else if (stock <= 3) {
         disponibilidadMsg = 'Poca disponibilidad';
         verDetalle = true;
     }
 
     return (
-        <Flex>
+        <Flex justify="center" align="center">
             <Card maxW='sm' className='CardItem'>
                 <Flex position='relative'>
                     {disponibilidadMsg && (
-                        <Text position='absolute' top={2} right={2} bg='red.500' color='white' px={2} py={1} borderRadius='md' fontSize='sm'>
+                        <Text position='absolute' top={2} right={2} bg={msgColor} color={msgColor === 'black' ? 'white' : 'yellow'} px={2} py={1} borderRadius='md' fontSize='sm'>
                             {disponibilidadMsg}
                         </Text>
                     )}
@@ -64,7 +67,3 @@ const Item = ({ id, nombre, categoria, marca, precio, envdisponible, stock, imag
 }
 
 export default Item
-
-/*
- 
-*/

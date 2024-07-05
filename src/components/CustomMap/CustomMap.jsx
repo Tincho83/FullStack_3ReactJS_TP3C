@@ -2,7 +2,7 @@ import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './CustomMap.css'
-import { Box, Flex } from '@chakra-ui/react'
+import { Box, Flex, Link } from '@chakra-ui/react'
 import L from 'leaflet'; // Importa Leaflet
 import 'leaflet/dist/leaflet.css'; // Importa el CSS de Leaflet
 
@@ -26,21 +26,17 @@ const CustomMap = () => {
         <MapContainer center={[-31.41274, -64.20488]} zoom={19} style={{ height: '380px', width: '400px' }} >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
+            attribution='&copy; OpenStreetMap contributors' />
           <Marker position={[-31.41274, -64.20488]}>
-            <Popup>             
+            <Popup>
             </Popup>
           </Marker>
         </MapContainer>
       </Box>
       <Box>
-      
       </Box>
-
     </Flex>
-
   )
-
 }
 
 export default CustomMap

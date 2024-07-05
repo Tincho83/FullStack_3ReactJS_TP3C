@@ -26,7 +26,7 @@ const ItemCount = ({ stock, valorInicial, alAgregar, maximoDisponibleProducto })
       {
         maximoDisponibleProducto !== 0 ?
           <Flex>
-            <Flex className='botonesContarProd'>
+            <Flex className='botonesContarProd' align="center" justify="center">
               <Button colorScheme='blue' size='sm' variant='outline' onClick={decrementar} >-</Button>
               <Box id='boxCant'>
                 {count}
@@ -37,7 +37,7 @@ const ItemCount = ({ stock, valorInicial, alAgregar, maximoDisponibleProducto })
           </Flex>
           :
           <Flex>
-            <Flex className='botonesContarProd'>
+            <Flex className='botonesContarProd' align="center" justify="center">
               <Button colorScheme='red' size='sm' variant='outline' onClick={decrementar} isDisabled>-</Button>
               <Box id='boxCant'>
                 {count - 1}

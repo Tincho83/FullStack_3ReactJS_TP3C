@@ -8,15 +8,17 @@ import { GiMasonJar, GiSugarCane, GiButter, GiMilkCarton, GiCoffeeBeans } from "
 import { PiCheese } from "react-icons/pi";
 import { TbMilk, TbWorldSearch, TbCategory } from "react-icons/tb";
 
-import { Box, Flex, Button, Menu, MenuButton, MenuList, MenuItem, MenuItemOption, useDisclosure, Heading } from '@chakra-ui/react'
+import { Box, Flex, Button, Menu, MenuButton, MenuList, MenuItem, MenuItemOption, useDisclosure, Heading, useColorMode } from '@chakra-ui/react'
 import { Link as ChakraLink } from '@chakra-ui/react';
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
 
+    const { colorMode, toggleColorMode } = useColorMode();
+
     return (
-        <Box>
-            <Flex h={'14hv'} w={'100%'} justify={'space-between'} align={'center'} backgroundColor={'#CAE5FF'} className='flexboxNavBar' id='flexboxNavBarD'>
+        <Box backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'}>
+            <Flex h={'14hv'} w={'100%'} justify={'space-between'} align={'center'} backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'} className='flexboxNavBar' id='flexboxNavBarD'>
                 <Menu className='menuHeader'>
                     <MenuButton
                         as={Button}

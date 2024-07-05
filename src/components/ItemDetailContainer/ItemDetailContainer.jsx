@@ -60,18 +60,3 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer
-
-/*
-useEffect(() => {
-    obtenerProductosporID(productoId)
-      .then((respuesta) => {
-        if (!respuesta) {
-          navigate('/*')
-        } else {
-          establecerProducto(respuesta)
-        }
-      })
-      .catch((error) => console.error(error))
-      .finally(() => establecerCargando(false))
-  }, [productoId])
-*/

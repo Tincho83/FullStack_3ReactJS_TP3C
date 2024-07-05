@@ -1,8 +1,20 @@
-.ImgPic{
+.ImgDetailPic{
     justify-content: center !important;
     align-content: center !important;
     align-items: center !important;
     display: inline !important;
     height: 300px;
     width: 350px;
+}
+
+.ItemDetailCardFooter {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    display: inline !important;
+}
+
+.ItemDetailCardText {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    display: inline !important;
 }

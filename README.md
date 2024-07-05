@@ -3,6 +3,7 @@
 ## _Tienda virtual de productos lacteos, infusiones y otros._
 
 ### Vista previa
+![image](/src/assets/imagenes/app_hd.gif)
 
 ### Depliegue
 [Mi Tienda Online](https://tiendavirtual62310.netlify.app/)

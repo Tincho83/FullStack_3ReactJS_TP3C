@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import Contexto from '../../context/CartContext'
-import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Flex, Input, Center, Heading, Button, useRadio } from '@chakra-ui/react'
+import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Flex, Input, Center, Heading, Button, useRadio, Box, Text, Image } from '@chakra-ui/react'
 import { addDoc, collection, getDoc, doc, Timestamp, updateDoc } from 'firebase/firestore'
 import { db } from '../../config/firebase'
 import Swal from 'sweetalert2'
@@ -89,9 +89,6 @@ const CheckOut = () => {
 
                 const actualStock = productoDocumento.data().stock
 
-                console.log("actualstock:", actualStock)
-                console.log("item_cantidad:", item.cantidad)
-
                 if (actualStock >= item.cantidad) {
                     await updateDoc(documentoReferencia, { stock: actualStock - item.cantidad })
 
@@ -118,8 +115,8 @@ const CheckOut = () => {
             const pedidoReferencia = await addDoc(coleccion, pedido)
 
             Swal.fire({
-                title: "Gracias por su compra",
-                text: `El pedido ${pedidoReferencia.id}`,
+                title: "Compra Realizada",
+                text: `Gracias por su compra ${usuario.nombres}. El pedido ${pedidoReferencia.id} estara disponible para retirar en las proximas 2 horas. Se enviara la factura por el monto de $ ${obtenerTotal()} pesos al correo electronico ${usuario.correoe}. Te esperamos nuevamente.`,
                 icon: "success",
                 confirmButtonText: "Ir a Catalogo de Productos",
             }).then(() => {
@@ -143,6 +140,25 @@ const CheckOut = () => {
     return (
         <Center mt={14}>
             <Flex direction={'column'} align={'center'} justify={'center'}>
+                <Heading>Productos que vas a comprar</Heading>
+                <Flex>
+                    {
+                        carrito.map((prod, index) => (
+                            <Flex key={prod.id} backgroundColor={'blue.100'} alignItems="center" p={4} mb={4} boxShadow="md" borderRadius="md">
+                                <Image src={prod.imagen} alt={prod.descripcion} style={{ width: '210px', height: '210px', marginRight: '20px' }} />
+                                <Box>
+                                    <Text>{prod.nombre}</Text>
+                                    <Text>Cantidad: {prod.cantidad}</Text>
+                                    <Text>Total: ${prod.precio * prod.cantidad}</Text>
+                                </Box>
+                            </Flex>
+                        ))
+                    }
+                </Flex>
+                <Box mt={4} mb={8}>
+                    <Text fontSize="xl" color={'blue'}>Total de la compra: ${obtenerTotal()}</Text>
+                </Box>
+
                 <Heading>Completa tus datos</Heading>
                 <Flex w={'100%'} justify={'center'} align={'center'}>
                     <FormControl w={'100%'} isInvalid={Object.keys(error).length > 0}>

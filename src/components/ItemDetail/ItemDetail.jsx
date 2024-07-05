@@ -34,10 +34,10 @@ const ItemDetail = ({ id, nombre, descripcion, categoria, marca, precio, envdisp
     }
 
     return (
-        <Flex>
+        <Flex justify="center" align="center">
             <Card maxW='sm' className='CardItem'>
                 <CardBody className='Header'>
-                    <Image src={imagen} alt={nombre} borderRadius='lg' className='ImgPic' />
+                    <Image src={imagen} alt={nombre} borderRadius='lg' className='ImgDetailPic' />
                     <Stack className='ItemData' mt='6' spacing='3'>
                         <Text>{categoria}</Text>
                         <Heading size='md'> {marca} {nombre} </Heading>
@@ -47,18 +47,29 @@ const ItemDetail = ({ id, nombre, descripcion, categoria, marca, precio, envdisp
                         <Text color='black.900' fontSize='19px'> {descripcion} </Text>
                     </Stack>
                 </CardBody>
+                <Flex className='ItemDetailCardText' color='blue.600' fontSize='1xl' align="center" justify="space-between">
+                    {
+                        cant > 0 ?
+                            <Flex>
+                                <ToastContainer />
+                            </Flex>
+                            :
+                            <Flex>
+                                <Divider />
+                                <Flex align="center" justify="center" >
+                                    <Text className='ItemDetailCantText'>Cantidad&nbsp;&nbsp;&nbsp;</Text>
+                                    <ItemCount stock={stock} valorInicial={1} alAgregar={alAgregar} maximoDisponibleProducto={maximoDisponibleProducto} />
+                                </Flex>
+                                <ToastContainer />
+                            </Flex>
+                    }
+                </Flex>
                 <Divider />
-                <Box className='ItemCardText' color='blue.600' fontSize='1xl'>
-                    <Text className='ItemCantText'>Cantidad:</Text>
-                    <ItemCount stock={stock} valorInicial={1} alAgregar={alAgregar} maximoDisponibleProducto={maximoDisponibleProducto} />
-                    <ToastContainer />
-                </Box>
-                <Divider />
-                <CardFooter className='ItemCardFooter'>
+                <CardFooter className='ItemDetailCardFooter' justify="center">
                     <Box>
                         {
                             cant > 0 ?
-                                <Flex>
+                                <Flex align="center" justify="center">
                                     <ButtonGroup spacing='3'>
                                         <Button className='itemButton' variant='solid' colorScheme='teal'> <Link to='/'> Seguir Comprando </Link> </Button>
                                     </ButtonGroup>
@@ -67,14 +78,15 @@ const ItemDetail = ({ id, nombre, descripcion, categoria, marca, precio, envdisp
                                     </ButtonGroup>
                                 </Flex>
                                 :
-                                <ButtonGroup spacing='3'>
-                                    <Button className='itemButton' variant='solid' colorScheme='teal'> <Link to='/'> Volver a todos los productos </Link> </Button>
-                                </ButtonGroup>
-
+                                <Flex align="center" justify="center">
+                                    <ButtonGroup spacing='3'>
+                                        <Button className='itemButton' variant='solid' colorScheme='teal'> <Link to='/'> Volver a todos los productos </Link> </Button>
+                                    </ButtonGroup>
+                                </Flex>
                         }
                     </Box>
-
                 </CardFooter>
+
             </Card>
         </Flex>
 
@@ -82,38 +94,3 @@ const ItemDetail = ({ id, nombre, descripcion, categoria, marca, precio, envdisp
 }
 
 export default ItemDetail
-
-
-/*
- return (
-        <Flex>
-            <Card maxW='sm' className='CardItem'>
-                <CardBody className='Header'>
-                    <Image src={imagen} alt={nombre} borderRadius='lg' />
-                    <Stack className='ItemData' mt='6' spacing='3'>
-                        <Text>{categoria}</Text>
-                        <Heading size='md'> {marca} {nombre} </Heading>
-                        <Text color='blue.600' fontSize='2xl'>${precio}</Text>
-                        <Text color='blue.600' fontSize='1xl'>Disponibilidad: {stock}  &nbsp;&nbsp;&nbsp; Envio a Domicilio: {envio}</Text>
-                        <Text color='black.900' fontSize='19px'> {descripcion} </Text>
-                    </Stack>
-                </CardBody>
-                <Divider />
-                <CardFooter className='ItemCardFooter'>
-                    <Box>
-                        <ButtonGroup spacing='3'>
-                            <Button className='itemButton' variant='solid' colorScheme='teal'>Comprar</Button>
-                        </ButtonGroup>
-                    </Box>
-                    <Box className='ItemCardText' color='blue.600' fontSize='1xl'>
-                        <Text className='ItemCantText'>Cantidad:</Text>
-                        <ItemCount stock={stock} valorInicial={1} alAgregar={alAgregar}/>
-                        <ToastContainer />
-                    </Box>
-                </CardFooter>
-            </Card>
-        </Flex>
-
-    )
-
-*/

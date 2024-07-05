@@ -16,7 +16,6 @@ import CheckOut from './components/CheckOut/CheckOut';
 
 
 function App() {
-  {/* */ }
 
   return (
     <ChakraProvider>
@@ -41,6 +40,3 @@ function App() {
 
 export default App
 
-/*
-    
-*/
