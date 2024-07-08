@@ -9,8 +9,8 @@ import 'leaflet/dist/leaflet.css'; // Importa el CSS de Leaflet
 // Sobrescribe las opciones del icono predeterminado de Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
 
-const urlIcono = "http://tiendavirtual62310.infinityfreeapp.com/marker-icon.png";
-const urlIconob = "http://tiendavirtual62310.infinityfreeapp.com/marker-shadow.png";
+const urlIcono = "https://firebasestorage.googleapis.com/v0/b/tiendaonline-77694.appspot.com/o/marker-icon.png?alt=media&token=000d4092-0cbf-44bb-ad74-798913cc6a35";
+const urlIconob = "https://firebasestorage.googleapis.com/v0/b/tiendaonline-77694.appspot.com/o/marker-shadow.png?alt=media&token=356f83c8-2ac8-43a2-8937-29666bbbf51c";
 
 L.Icon.Default.mergeOptions({
   //iconRetinaUrl: markerIcon,
