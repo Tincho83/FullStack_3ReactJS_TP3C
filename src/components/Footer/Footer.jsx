@@ -14,7 +14,7 @@ const Footer = () => {
       {/* Icono Flotante subir */}
       <Box className='piepagina_divflotantesubir'>
         <ChakraLink href='#inicio'>
-          <img src="https://iocomm.000webhostapp.com/imgs/subir.png" alt="ir a inicio superior de la pagina"
+          <img src="http://tiendavirtual62310.infinityfreeapp.com/subir.png" alt="ir a inicio superior de la pagina"
             className='piepagina_divflotante_imgsubir' />
         </ChakraLink>
       </Box>
@@ -22,7 +22,7 @@ const Footer = () => {
       {/* Icono Flotante WhatsApps */}
       <Box className='piepagina_divflotantewts'>
         <ChakraLink href='https://api.whatsapp.com/send?phone=5435156056156&text=%C2%A1Hola%21+Estoy+en+la+tienda+y+quiero+pedir+m%C3%A1s+informaci%C3%B3n.&type=phone_number&app_absent=0' isExternal>
-          <img src="https://iocomm.000webhostapp.com/imgs/whatsapp.png" alt="ir a Contacto Whastapp"
+          <img src="http://tiendavirtual62310.infinityfreeapp.com/whatsapp.png" alt="ir a Contacto Whastapp"
             className='piepagina_divflotante_imgWhatsapps' />
         </ChakraLink>
       </Box>
@@ -38,31 +38,31 @@ const Footer = () => {
             <ul className='piepagina_divcontacto_ulInfoContacto'>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='https://iocomm.000webhostapp.com/imgs/tel.png' alt='Telefono de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='http://tiendavirtual62310.infinityfreeapp.com/tel.png' alt='Telefono de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>Telefono/FAX: +543514350620</Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='https://iocomm.000webhostapp.com/imgs/correo.png' alt='Correo de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='http://tiendavirtual62310.infinityfreeapp.com/correo.png' alt='Correo de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>Correo Electronico: io@io.com</Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='https://iocomm.000webhostapp.com/imgs/whatsapp.png' alt='Contacto Whatsapps' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='http://tiendavirtual62310.infinityfreeapp.com/whatsapp.png' alt='Contacto Whatsapps' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>+543515625625 </Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='https://iocomm.000webhostapp.com/imgs/telegram.png' alt='Contacto Telegram' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='http://tiendavirtual62310.infinityfreeapp.com/telegram.png' alt='Contacto Telegram' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>+543515625625 </Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='https://iocomm.000webhostapp.com/imgs/linkedin.png' alt='Contacto Linkedin' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='http://tiendavirtual62310.infinityfreeapp.com/linkedin.png' alt='Contacto Linkedin' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>io@io.com  </Text>
                 </Flex>
               </li>
@@ -79,13 +79,13 @@ const Footer = () => {
             <ul className='piepagina_divcontacto_ulInfoContacto'>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='https://iocomm.000webhostapp.com/imgs/sucursal.png' alt='Domicilio' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='http://tiendavirtual62310.infinityfreeapp.com/sucursal.png' alt='Domicilio' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'> Domicilio: Calle 96 Nro 3200  </Text>
                 </Flex>
               </li>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='https://iocomm.000webhostapp.com/imgs/horario.png' alt='Horario' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='http://tiendavirtual62310.infinityfreeapp.com/horario.png' alt='Horario' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'> Lunes a Viernes de 09:00hs a 19:00hs </Text>
                 </Flex>
               </li>
@@ -112,12 +112,12 @@ const Footer = () => {
       {/* info de ayuda y suscripcion  */}
       <Box className='piepagina_divSuscripcion' justify={'center'} align={'center'} h={'50hv'}>
         <ChakraLink href="pages/ayuda.html" className='cabecera_divEnlacesHorizontales_ul_li_a' >
-          <Image className='piepagina_divSuscripcion_img-AyudaTermCondicion' boxSize='32px' objectFit='cover' src='https://iocomm.000webhostapp.com/imgs/ayuda.png' alt='ayuda' />
+          <Image className='piepagina_divSuscripcion_img-AyudaTermCondicion' boxSize='32px' objectFit='cover' src='http://tiendavirtual62310.infinityfreeapp.com/ayuda.png' alt='ayuda' />
           <Text className='piepagina_divSuscripcion_img-AyudaTermCondicion_p'>Ayuda</Text>
         </ChakraLink>
 
         <ChakraLink href="pages/terminoscond.html" className='cabecera_divEnlacesHorizontales_ul_li_a' >
-          <Image className='piepagina_divSuscripcion_img-AyudaTermCondicion' boxSize='32px' objectFit='cover' src='https://iocomm.000webhostapp.com/imgs/ayuda.png' alt='Terminos y Condiciones' />
+          <Image className='piepagina_divSuscripcion_img-AyudaTermCondicion' boxSize='32px' objectFit='cover' src='http://tiendavirtual62310.infinityfreeapp.com/ayuda.png' alt='Terminos y Condiciones' />
           <Text className='piepagina_divSuscripcion_img-AyudaTermCondicion_p'>Terminos y Condiciones</Text>
         </ChakraLink>
 

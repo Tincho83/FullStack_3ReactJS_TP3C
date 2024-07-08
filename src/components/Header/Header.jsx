@@ -57,7 +57,7 @@ const Header = () => {
                         </MenuList>
                     </Menu>
                     <ChakraLink href='/' marginLeft={'25px'} marginRight={'5px'}> <img src={reactLogo} alt="Logo Mi tienda Online" className='imglogo'></img></ChakraLink>
-                    <Heading color={'#6F8AB7'} fontSize={'x-large'} m='10px'>Mi Tienda Online</Heading>
+                    <Heading color={colorMode === 'light' ? '#6F8AB7' : '#CAE5FF'} fontSize={'x-large'} m='10px'>Mi Tienda Online</Heading>
                     <Flex align="center">Modo Noche&nbsp; <Switch colorScheme='teal' size='sm' isChecked={colorMode === 'dark'} onChange={toggleColorMode} /></Flex>
                 </Flex>
             </Box>
@@ -65,3 +65,4 @@ const Header = () => {
     }
 
     export default Header
+    
