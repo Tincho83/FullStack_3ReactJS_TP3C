@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className='piepagina_divcontacto_ulInfoContacto'>
               <li className='piepagina_divcontacto_ulInfoContacto_li'>
                 <Flex justify={'center'} align={'center'} h={'50hv'}>
-                  <Image src='https://tiendavirtual62310.infinityfreeapp.com/tel.png' alt='Telefono de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
+                  <Image src='https://firebasestorage.googleapis.com/v0/b/tiendaonline-77694.appspot.com/o/tel.png?alt=media&token=0e974253-87c9-4a0f-b3b7-d3469ef50923' alt='Telefono de Contacto' className='piepagina_divcontacto_ulInfoContacto_li_img' boxSize='32px' objectFit='cover' />
                   <Text className='piepagina_divcontacto_ulInfoContacto_li_img_p' as='b'>Telefono/FAX: +543514350620</Text>
                 </Flex>
               </li>
