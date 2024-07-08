@@ -20,5 +20,26 @@
     }
 }
 
+@media only screen and (min-width: 620px) {
+
+    .flexboxFooter{
+        padding-left: 0px !important;    
+        justify-content: center !important;
+        margin-top: 10px !important;
+        
+    }
+    
+    .mapContainer{
+        margin-left: 0px !important;
+        margin-bottom: 0px !important;
+        z-index: 1;
+
+    }
+
+    .contenedorMapa{
+        height: 380px !important;
+        width: 400px !important;
+    }
+}
 
 

@@ -4,6 +4,7 @@ import Contexto from '../../context/CartContext'
 import { Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, TableContainer } from '@chakra-ui/react'
 import { MdDeleteForever } from "react-icons/md";
 import { Link } from 'react-router-dom'
+import './Cart.css'
 
 const Cart = () => {
     const { carrito, borrarItem, vaciarCarrito, obtenerTotal, incrementarCantItem, decrementarCantItem } = useContext(Contexto)
@@ -14,19 +15,19 @@ const Cart = () => {
         <div>
             <Heading color={colorMode === 'light' ? 'gray.800' : 'gray.200'}>Carrito de compras</Heading>
 
-            <TableContainer>
+            <TableContainer className='tablaCont'>
                 {
                     cantProdCarrito > 0 ?
-                        <Table variant='striped' colorScheme='teal'>
+                        <Table className='tablaCart' variant='striped' colorScheme='teal'>
                             <TableCaption>Contenido del carrito de usuario</TableCaption>
                             <Thead>
-                                <Tr>
-                                    <Th textAlign="center">Producto</Th>
-                                    <Th textAlign="center">Precio $</Th>
-                                    <Th textAlign="center"></Th>
-                                    <Th textAlign="center">Cantidad Total</Th>
-                                    <Th textAlign="center">SubTotal</Th>
-                                    <Th textAlign="center">Acciones</Th>
+                                <Tr className='trDatos'>
+                                    <Th className='thDatos' textAlign="center">Producto</Th>
+                                    <Th className='thDatos' textAlign="center">Precio $</Th>
+                                    <Th className='thDatos' textAlign="center"></Th>
+                                    <Th className='thDatos' textAlign="center">Cantidad Total</Th>
+                                    <Th className='thDatos' textAlign="center">SubTotal</Th>
+                                    <Th className='thDatos' textAlign="center">Acciones</Th>
                                 </Tr>
                             </Thead>
                             <Tbody>
@@ -39,7 +40,7 @@ const Cart = () => {
                             <Tfoot>
                                 <Tr>
                                     <Th> <Button onClick={() => vaciarCarrito()}> Vaciar Carrito </Button> </Th>
-                                    <Th> <Heading>Total: $ {obtenerTotal()} </Heading> </Th>
+                                    <Th className='totalCarrito'> <Heading className='totalCarrito'>Total: $ {obtenerTotal()} </Heading> </Th>
                                     <Th> <Button > <Link to='/finalizarcompra'> Finalizar Compra </Link> </Button> </Th>
                                 </Tr>
                             </Tfoot>
@@ -73,27 +74,27 @@ const Cart = () => {
 const CartItem = React.memo(({ producto, borrarItem, incrementarCantItem, decrementarCantItem }) => {
     return (
         <Tr>
-            <Td>
+            <Td className='tdDatos'>
                 <Flex alignItems="center">
                     <Box mr={4}>
-                        <img src={producto.imagen} alt={producto.nombre} style={{ width: '96px', height: '96px' }} />
+                        <img src={producto.imagen} alt={producto.nombre} className='imgProdCart' />
                     </Box>
                     <Box>
                         <Text>{producto.nombre}</Text>
                     </Box>
                 </Flex>
             </Td>
-            <Td textAlign="center"> $ {producto.precio} </Td>
-            <Td textAlign="center">
+            <Td className='tdDatos' textAlign="center"> $ {producto.precio} </Td>
+            <Td className='tdDatos' textAlign="center">
                 <Flex alignItems="center">
                     <Button onClick={() => decrementarCantItem(producto.id)} >-</Button>
                     <Text marginRight={2} marginLeft={2}>{producto.cantidad}</Text>
                     <Button onClick={() => incrementarCantItem(producto.id, producto.stock)} >+</Button>
                 </Flex>
             </Td>
-            <Td textAlign="center"> {producto.cantidad} </Td>
-            <Td textAlign="center">{producto.precio * producto.cantidad}</Td>
-            <Td textAlign="center"> <Button onClick={() => borrarItem(producto.id)}> <MdDeleteForever /> </Button> </Td>
+            <Td className='tdDatos' textAlign="center"> {producto.cantidad} </Td>
+            <Td className='tdDatos' textAlign="center">{producto.precio * producto.cantidad}</Td>
+            <Td className='tdDatos' textAlign="center"> <Button onClick={() => borrarItem(producto.id)}> <MdDeleteForever /> </Button> </Td>
         </Tr>
     );
 });
