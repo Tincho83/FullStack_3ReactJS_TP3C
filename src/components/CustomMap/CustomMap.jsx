@@ -23,7 +23,7 @@ const CustomMap = () => {
   return (
     <Flex h={'14hv'} w={'100%'} align={'center'} className='flexboxFooter' id='flexboxFooter'>
       <Box className='mapContainer'>
-        <MapContainer center={[-31.41274, -64.20488]} zoom={19} style={{ height: '380px', width: '400px' }} >
+        <MapContainer className='contenedorMapa' center={[-31.41274, -64.20488]} zoom={19} style={{ height: '380px', width: '400px' }} >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; OpenStreetMap contributors' />
