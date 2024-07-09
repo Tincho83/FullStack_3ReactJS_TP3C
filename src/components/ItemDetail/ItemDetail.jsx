@@ -68,21 +68,14 @@ const ItemDetail = ({ id, nombre, descripcion, categoria, marca, precio, envdisp
                 <CardFooter className='ItemDetailCardFooter' justify="center">
                     <Box>
                         {
-                            cant > 0 ?
-                                <Flex align="center" justify="center">
-                                    <ButtonGroup spacing='3'>
-                                        <Button className='itemButton' variant='solid' colorScheme='teal'> <Link to='/'> Seguir Comprando </Link> </Button>
-                                    </ButtonGroup>
-                                    <ButtonGroup spacing='3'>
-                                        <Button className='itemButton' variant='solid' colorScheme='teal'> <Link to='/carrito'> Ir al Carrito </Link> </Button>
-                                    </ButtonGroup>
-                                </Flex>
-                                :
-                                <Flex align="center" justify="center">
-                                    <ButtonGroup spacing='3'>
-                                        <Button className='itemButton' variant='solid' colorScheme='teal'> <Link to='/'> Volver a todos los productos </Link> </Button>
-                                    </ButtonGroup>
-                                </Flex>
+                            <Flex align="center" justify="center">
+                                <ButtonGroup spacing='3'>
+                                    <Button className='itemButton' variant='solid' colorScheme='teal'> <Link to='/'> Seguir Comprando </Link> </Button>
+                                </ButtonGroup>
+                                <ButtonGroup spacing='3'>
+                                    <Button className='itemButton' variant='solid' colorScheme='teal'> <Link to='/carrito'> Ir al Carrito </Link> </Button>
+                                </ButtonGroup>
+                            </Flex>
                         }
                     </Box>
                 </CardFooter>

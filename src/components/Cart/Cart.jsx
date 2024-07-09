@@ -12,13 +12,13 @@ const Cart = () => {
     const { colorMode } = useColorMode();
 
     return (
-        <div>
-            <Heading color={colorMode === 'light' ? 'gray.800' : 'gray.200'}>Carrito de compras</Heading>
+        <Box>             
+            <Heading color={colorMode === 'light' ? '#6F8AB7' : '#CAE5FF'}  backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'}>Carrito de compras</Heading>
 
-            <TableContainer className='tablaCont'>
+            <TableContainer className='tablaCont' backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'} color={colorMode === 'light' ? '#6F8AB7' : '#CAE5FF'} >
                 {
                     cantProdCarrito > 0 ?
-                        <Table className='tablaCart' variant='striped' colorScheme='teal'>
+                        <Table className='tablaCart' variant='striped' colorScheme='blue' backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7' }>
                             <TableCaption>Contenido del carrito de usuario</TableCaption>
                             <Thead>
                                 <Tr className='trDatos'>
@@ -49,12 +49,12 @@ const Cart = () => {
                         <Table>
                             <Thead>
                                 <Tr>
-                                    <Td textAlign="center"><Heading color={'red'}> Sin Productos Agregados. </Heading></Td>                                    
+                                    <Td textAlign="center"><Heading color={'orange'}> Sin Productos Agregados. </Heading></Td>                                    
                                 </Tr>
                             </Thead>
                             <Tbody>
                                 <Tr>
-                                <Td textAlign="center"><Text color={'red'}> Vuelva al catalogo de productos para realizar una compra. </Text></Td>
+                                <Td textAlign="center"><Text color={'red'} as='b' fontSize='19px'> Vuelva al catalogo de productos para realizar una compra. </Text></Td>
                                 </Tr>
                             </Tbody>
                             <Tfoot>
@@ -66,7 +66,7 @@ const Cart = () => {
                 }
 
             </TableContainer>
-        </div >
+        </Box >
     )
 }
 
