@@ -1,6 +1,6 @@
 ![image](/src/assets/imagenes/mitiendaonline.png)
 # Mi Tienda Online
-## _Tienda virtual de productos lacteos, infusiones y otros._
+## _Tienda virtual de productos lacteos, infusiones y otros._  
 ## _Virtual store of dairy products, infusions and others._
 
 ### Vista previa / Preview
@@ -40,8 +40,8 @@ E-commerce site made in React for the React JS course at CoderHouse.
 ### Pasos / Steps
 - Abrir VS Code / Open Vs Code
 - Clonar repositorio / Clone Repository
-   -  **git clone git@github.com:Tincho83/FullStack_3ReactJS_TP3C.git**
-   o
+   -  **git clone git@github.com:Tincho83/FullStack_3ReactJS_TP3C.git**  
+   o  
    -  **git clone https://github.com/Tincho83/FullStack_3ReactJS_TP3C.git**
 - Acceder a la carpeta del proyecto / Access to project folder
    - **cd FullStack_3ReactJS_TP3C**
