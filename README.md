@@ -2,7 +2,8 @@
 # Mi Tienda Online
 ## _Tienda virtual de productos lacteos, infusiones y otros._  
 ## _Virtual store of dairy products, infusions and others._
-
+  
+  
 ### Vista previa / Preview
 ![image](/src/assets/imagenes/app_hd.gif)
 

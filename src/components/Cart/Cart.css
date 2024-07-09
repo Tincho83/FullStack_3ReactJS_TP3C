@@ -1,7 +1,10 @@
 @media only screen and (min-width: 320px) {
     .tablaCont {
         font-size: 11px;
+        color: black !important;
     }
+
+    .tabla
     
     .thDatos {
         padding-top: 2px !important;

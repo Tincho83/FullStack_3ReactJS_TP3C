@@ -21,7 +21,7 @@
 
 /* Cambiar el color del thumb (la barra deslizante) de la scrollbar */
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(111, 138, 183); /* Color del thumb */
+  background-color: rgb(76, 105, 156); /* Color del thumb */
   border-radius: 5px; /* Borde redondeado del thumb */
 }
 

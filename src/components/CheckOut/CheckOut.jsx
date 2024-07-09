@@ -1,10 +1,11 @@
 import React, { useContext, useState } from 'react'
 import Contexto from '../../context/CartContext'
-import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Flex, Input, Center, Heading, Button, useRadio, Box, Text, Image } from '@chakra-ui/react'
+import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Flex, Input, Center, Heading, Button, useRadio, useColorMode, Box, Text, Image } from '@chakra-ui/react'
 import { addDoc, collection, getDoc, doc, Timestamp, updateDoc } from 'firebase/firestore'
 import { db } from '../../config/firebase'
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
+import './CheckOut.css'
 
 const CheckOut = () => {
     const [usuario, establecerUsuario] = useState({
@@ -14,6 +15,8 @@ const CheckOut = () => {
         confirmcorreoe: '',
         telcel: ''
     })
+
+    const { colorMode } = useColorMode();
 
     const [error, establecerError] = useState({})
     const [cargando, establecerCargando] = useState(false)
@@ -138,14 +141,14 @@ const CheckOut = () => {
     }
 
     return (
-        <Center mt={14}>
-            <Flex direction={'column'} align={'center'} justify={'center'}>
+        <Center className='carritoDetalle'   backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'}>
+            <Flex direction={'column'} align={'center'} justify={'center'} >
                 <Heading>Productos que vas a comprar</Heading>
                 <Flex>
                     {
                         carrito.map((prod, index) => (
-                            <Flex key={prod.id} backgroundColor={'blue.100'} alignItems="center" p={4} mb={4} boxShadow="md" borderRadius="md">
-                                <Image src={prod.imagen} alt={prod.descripcion} style={{ width: '210px', height: '210px', marginRight: '20px' }} />
+                            <Flex key={prod.id} backgroundColor={'blue.200'} alignItems="center" p={4} mb={4} boxShadow="md" borderRadius="md">
+                                <Image src={prod.imagen} alt={prod.descripcion} className='imagenDetalle' />
                                 <Box>
                                     <Text>{prod.nombre}</Text>
                                     <Text>Cantidad: {prod.cantidad}</Text>

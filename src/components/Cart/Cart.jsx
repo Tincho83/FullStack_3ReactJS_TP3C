@@ -13,9 +13,9 @@ const Cart = () => {
 
     return (
         <Box>             
-            <Heading color={colorMode === 'light' ? '#6F8AB7' : '#CAE5FF'}  backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'}>Carrito de compras</Heading>
+            <Heading  backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'}>Carrito de compras</Heading>
 
-            <TableContainer className='tablaCont' backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'} color={colorMode === 'light' ? '#6F8AB7' : '#CAE5FF'} >
+            <TableContainer className='tablaCont' backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7'}  >
                 {
                     cantProdCarrito > 0 ?
                         <Table className='tablaCart' variant='striped' colorScheme='blue' backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7' }>
@@ -46,7 +46,7 @@ const Cart = () => {
                             </Tfoot>
                         </Table>
                         :
-                        <Table>
+                        <Table className='tablaCart' variant='striped' colorScheme='blue' backgroundColor={colorMode === 'light' ? '#CAE5FF' : '#6F8AB7' }>
                             <Thead>
                                 <Tr>
                                     <Td textAlign="center"><Heading color={'orange'}> Sin Productos Agregados. </Heading></Td>                                    
