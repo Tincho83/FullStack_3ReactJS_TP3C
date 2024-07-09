@@ -11,7 +11,7 @@
 [Mi Tienda Online](https://tiendavirtual62310.netlify.app/)
 
 ### Descripcion / Description
-Sitio e-commerce realizado en React para el curso de React JS en CoderHouse.
+Sitio e-commerce realizado en React para el curso de React JS en CoderHouse.  
 E-commerce site made in React for the React JS course at CoderHouse.
 
 ### Construccion / Building
